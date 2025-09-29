@@ -1,17 +1,164 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp">
+
+<LinearLayout
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1. Какой язык программирования используется для Android?"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"/>
+
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp">
+
+        <RadioButton
+            android:id="@+id/radio1_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Java"/>
+
+        <RadioButton
+            android:id="@+id/radio1_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kotlin"/>
+
+        <RadioButton
+            android:id="@+id/radio1_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Python"/>
+
+        <RadioButton
+            android:id="@+id/radio1_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="C++"/>
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="2. Соберите ФИО преподавателя по мобильной разработке?"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"/>
+
+    <CheckBox
+        android:id="@+id/check2_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Кочетков"/>
+
+    <CheckBox
+        android:id="@+id/check2_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Станислав"/>
+
+    <CheckBox
+        android:id="@+id/check2_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Иван"/>
+
+    <CheckBox
+        android:id="@+id/check2_4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Змея"/>
+
+    <CheckBox
+        android:id="@+id/check2_5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Сафирович"/>
+
+    <CheckBox
+        android:id="@+id/check2_6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Какой то левый чел"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="3. Столица кого? Пральна, РФ"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"/>
+
+    <RadioGroup
+        android:id="@+id/radioGroup3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp">
+
+        <RadioButton
+            android:id="@+id/radio3_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Лондон"/>
+
+        <RadioButton
+            android:id="@+id/radio3_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Москоу"/>
+
+        <RadioButton
+            android:id="@+id/radio3_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Берлин"/>
+
+        <RadioButton
+            android:id="@+id/radio3_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Мадрид"/>
+    </RadioGroup>
 
     <Button
-        android:id="@+id/back_btn"
+        android:id="@+id/checkButton"
+        android:layout_width="267dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Проверить ответы"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/resultText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="16sp"
+        android:layout_marginTop="16dp"
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/backButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="36dp"
         android:text="Back"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"/>
+
+</LinearLayout>
+</ScrollView>
