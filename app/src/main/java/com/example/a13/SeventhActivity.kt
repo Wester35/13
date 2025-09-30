@@ -52,7 +52,6 @@ class SeventhActivity : AppCompatActivity()  {
         val correctCount = listOf(question1Correct, question2Correct, question3Correct).count { it }
         val totalQuestions = 3
 
-        // Формируем результат
         val result = StringBuilder()
         result.append("Результат: $correctCount из $totalQuestions\n\n")
 
